@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-      <script src="https://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
   </head>
     <body>
-
         <!-- ÜBERSCHRIFT 1 KLOPF-KLOPF -->
         <section class="center"> <div id="worktxt0">
             <h1><center>KLOPF-KLOPF</center></h1> <br>
-             It's a short movie called "klopf-klopf". I made it together with some friends. It's about drugs and how it messes around with your brain. Below some parts of the movie.
+            It is a short movie about a guy who enters <br>
+            a crazy and psychedelic world through a <br>
+            mystery white powder. 
             </div></section>
 
         <!-- VIDEO 1 Klopf-Klopf -->
@@ -21,8 +20,8 @@
             PART 1: WELCOME TO THE PARTY <br>
             <h6>00:16 - 00:43</h6>
             </div></section>
-        <div onmouseover="Play1()" onmouseout="Stop1()">
-            <video id="video1" width="20%" height="20%"  controls preload="auto" poster="video/Cover.png">
+        <div>
+            <video id="video1" controls poster="video/Cover.png">
                 <source src="video/kk-hello.mp4" type="video/mp4" /></video>
         </div>
 
@@ -32,10 +31,10 @@
             PART 2: BEERPONG SHOT <br>
             <h6>01:22 - 01.33 </h6>
         </div>
-        <div onmouseover="Play2()" onmouseout="Stop2()">
-            <video id="video2" width="20%" height="20%"  controls poster="video/Cover.png">
+        <div>
+            <video id="video2" controls poster="video/Cover.png">
                 <source src="video/kk-beerpong-.mp4" type="video/mp4" />
-                </video>
+            </video>
          </div>
 
         <!-- VIDEO 3 Klopf-Klopf -->
@@ -43,8 +42,8 @@
             PART 3: TRIP <br>
             <h6>02:08 - 03.08 </h6>
         </div>
-        <div onmouseover="Play3()" onmouseout="Stop3()">
-            <video id="video3" width="20%" height="20%" loop controls poster="video/Cover.png">
+        <div>
+            <video id="video3" loop controls poster="video/Cover.png">
                 <source src="video/kk-trip.mp4" type="video/mp4" />
                 </video>
          </div>
@@ -61,8 +60,8 @@
             COVERD IN SNOW <br>
             <h6>Cold but worth it. </h6>
             </div></section>
-        <div onmouseover="Play4()" onmouseout="Stop4()">
-            <video id="video4" width="20%" height="20%"  controls poster="video/Cover.png">
+        <div>
+            <video id="video4" controls poster="video/Cover.png">
                 <source src="video/schnee.mp4" type="video/mp4" /></video>
         </div>
 
@@ -72,8 +71,8 @@
            <h6> Somwhere in the middle of the mountains. <br>
             Far away from roads and humans.</h6>
             </div></section>
-        <div onmouseover="Play5()" onmouseout="Stop5()">
-            <video id="video5" width="20%" height="20%"  controls poster="video/Cover.png">
+        <div>
+            <video id="video5" controls poster="video/Cover.png">
                 <source src="video/pferde.mp4" type="video/mp4" /></video>
         </div>
 
@@ -81,77 +80,12 @@
         <section class="center"> <div id="dronetxt3">
             CANYONS <br>
             </div></section>
-        <div onmouseover="Play6()" onmouseout="Stop6()">
+        <div>
             <video id="video6" width="20%" height="20%"  controls poster="video/Cover.png">
                 <source src="video/canyon.mp4" type="video/mp4" /></video>
         </div>
-
-
-
-
-<script type="text/javascript">
-var myVideo1=document.getElementById("video1");
-myVideo1.volume =0.1;
-function Stop1(){
-  myVideo1.pause();
-}
-function Play1(){
-if (myVideo1.paused)
-    myVideo1.play();
- }
-
-
-var myVideo2=document.getElementById("video2");
-myVideo2.volume =0.1;
-function Stop2(){
-  myVideo2.load();
-}
-function Play2(){
-if (myVideo2.paused)
-    myVideo2.play();
- }
-
-var myVideo3=document.getElementById("video3");
-myVideo3.volume = 0.1;
-function Stop3(){
-  myVideo3.pause();
-}
-function Play3(){
-if (myVideo3.paused)
-    myVideo3.play();
- }
-
-var myVideo4=document.getElementById("video4");
-myVideo4.volume = 0.1;
-function Stop4(){
-  myVideo4.load();
-}
-function Play4(){
-if (myVideo4.paused)
-    myVideo4.play();
- }
-
-var myVideo5=document.getElementById("video5");
-myVideo5.volume = 0.1;
-function Stop5(){
-  myVideo5.load();
-}
-function Play5(){
-if (myVideo5.paused)
-    myVideo5.play();
- }
-
-var myVideo6=document.getElementById("video6");
-myVideo6.volume = 0.1;
-function Stop6(){
-  myVideo6.load();
-}
-function Play6(){
-if (myVideo6.paused)
-    myVideo6.play();
- }
-
-
-    </script>
+        <script src="https://code.jquery.com/jquery-latest.min.js"
+            type="text/javascript"></script>
+        <script type="text/javascript" src="videoHover.js"></script>
   </body>
 </html>

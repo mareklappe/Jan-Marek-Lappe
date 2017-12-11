@@ -290,9 +290,20 @@ video::-webkit-media-controls-fullscreen-button {
 }
 video::-webkit-media-controls-play-button {
     display: none !important;
+    -webkit-appearance: none;
 }
+
+video::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+
 video::-webkit-media-controls-timeline {
     display: none !important;
+}
+video::-moz-media-controls-timeline {
+    display: none;
 }
 video::-webkit-media-controls-timeline-container {
     display: none !important;
